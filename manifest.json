@@ -2,10 +2,15 @@
     "manifest_version": 2,
     "version": "1.0", 
     "name": "Word Swap", 
-
+    "permissions" : ["<all_urls>"],
     "browser_action": {
         "default_popup": "popup.html"
     },
 
-    "content_scripts": ["content.js"]
+    "content_scripts": [{
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }]
+
 }
