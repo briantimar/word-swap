@@ -3,6 +3,5 @@
     "version": "1.0", 
     "name": "Word Swap", 
 
-    "default_locale": "en", 
     "browser_action": {}
 }
